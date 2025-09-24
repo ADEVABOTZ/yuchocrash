@@ -177,7 +177,7 @@ document.getElementById('loginForm').addEventListener('submit',async(e)=>{
     if(data.success){
       localStorage.setItem('authToken',data.token);
       showResult('Login successful!','success');
-      setTimeout(()=>{window.location.href='imdex.html';},1500);
+      setTimeout(()=>{window.location.href='index.html';},1500);
     }else showResult(`${data.message}`,'error');
   }catch(err){
     console.error('Login error:',err);
